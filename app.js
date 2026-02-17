@@ -27,7 +27,7 @@ app.use(logger("dev"));
 
 app.use(
   cors({
-    origin: "https://kam-notes-fe.vercel.app/",
+    origin: "https://kam-notes-fe.vercel.app",
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   }),
