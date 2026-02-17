@@ -13,9 +13,7 @@ var app = express();
 const mongoose = require("mongoose");
 
 mongoose
-  .connect(
-    "mongodb+srv://kamshank578_db_user:MhNelJ5rm9ezeEcm@cluster0.rgmj0bd.mongodb.net/?appName=Cluster0/test?retryWrites=true&w=majority",
-  )
+  .connect(process.env.MONGO_URI)
   .then(() => console.log("MongoDB Connected"))
   .catch((err) => console.log(err));
 
